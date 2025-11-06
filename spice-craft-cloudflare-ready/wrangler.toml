@@ -1,0 +1,18 @@
+# Auto-generated wrangler.toml for Cloudflare Pages / Workers compatibility
+# You should fill in account_id and project specifics before publishing.
+name = "spice-jadoo:-an-indian-cooking-game"
+type = "javascript"
+compatibility_date = "2025-11-06"
+# account_id = ""  # add your Cloudflare account id here
+# For Pages deployment, the build command below will be used by Pages if you configure in dashboard.
+[build]
+command = "vite build"
+[site]
+bucket = "dist"
+entry-point = "workers"  # Create a 'workers' or 'functions' directory if you want Pages Functions
+
+# Notes:
+# - 'bucket' points to Vite's default build output 'dist' (Cloudflare Pages should serve from 'dist').
+# - If you prefer a different output folder, change 'bucket' accordingly.
+# - If using Pages Functions, create a 'functions' directory at the project root. Cloudflare Pages will detect it.
+# - Fill account_id if you want to use 'wrangler publish' or other Wrangler commands.
